@@ -36,7 +36,7 @@ def main():
         index = open(report_subfolder + os.path.sep + "index.html", "w+")
         index.truncate(0)
         index.write(
-            "<!DOCTYPE html><meta charset=\"utf-8\"><meta http-equiv=\"refresh\" content=\"0; URL=" + gh_pages_report_url + "/" + input_github_run_num + "/>\r\n")
+            "<!DOCTYPE html><meta charset=\"utf-8\"><meta http-equiv=\"refresh\" content=\"0; URL=" + gh_pages_report_url + "/" + input_github_run_num + "/\">\r\n")
         index.write("<meta http-equiv=\"Pragma\" content=\"no-cache\"><meta http-equiv=\"Expires\" content=\"0\">")
         index.close()
 
