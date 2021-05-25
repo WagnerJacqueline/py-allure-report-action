@@ -52,9 +52,9 @@ def main():
             "\"buildName\":\"GitHub Actions Run #" + input_github_run_id + "\",\"buildOrder\":\"" + input_github_run_num + "\"}")
         executor.close()
 
-        environment = open(path_allure_results + os.path.sep + s.name + os.path.sep + "environment.properties", "w+")
-        environment.write("URL=" + gh_pages_report_url)
-        environment.close()
+        #environment = open(path_allure_results + os.path.sep + s.name + os.path.sep + "environment.properties", "w+")
+        #environment.write("URL=" + gh_pages_report_url)
+        #environment.close()
 
         os.makedirs(report_subfolder, mode, exist_ok=True)
         os.makedirs(run_num_folder, mode, exist_ok=True)
