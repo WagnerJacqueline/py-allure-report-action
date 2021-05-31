@@ -8,8 +8,8 @@ def main():
 
     input_allure_results = os.environ["INPUT_ALLURE_RESULTS"]
     input_gh_pages = os.environ["INPUT_GH_PAGES"]
-    input_github_run_num = os.environ["INPUT_GITHUB_RUN_NUM"]
-    input_github_run_id = os.environ["INPUT_GITHUB_RUN_ID"]
+    input_github_run_num = os.environ["GITHUB_RUN_NUMBER"]
+    input_github_run_id = os.environ["GITHUB_RUN_ID"]
     input_github_repo = os.environ["INPUT_GITHUB_REPO"]
     input_github_report_repo = os.environ["INPUT_GITHUB_REPORT_REPO"]
 
