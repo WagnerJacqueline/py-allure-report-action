@@ -1,6 +1,7 @@
 import os
 import shutil
 import subprocess
+import logging
 
 
 def main():
@@ -32,6 +33,8 @@ def main():
 
         report_subfolder = os.path.join(path_gh_pages, report_sub_name)
         run_num_folder = os.path.join(report_subfolder, input_github_run_num)
+        
+        logging.debug(os.listdir(report_subfolder))
 
         index = open(report_subfolder + os.path.sep + "index.html", "w+")
         index.truncate(0)
